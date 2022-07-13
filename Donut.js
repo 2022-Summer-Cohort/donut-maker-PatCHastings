@@ -37,9 +37,7 @@ class Donut{
            this._donutCount -= this._autoclickCost;
            this._autoclickCost *= 1.1;
            this._autoclicker++}
-        else {
-            alert("You Cannot Buy This Yet!!!")
-        }
+
     }
 }
 export default Donut;

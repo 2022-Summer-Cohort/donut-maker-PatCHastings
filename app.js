@@ -13,10 +13,13 @@ let autoclickerButton = document.querySelector("#buyAutoClicker");
 autoclickerButton.addEventListener("click", function(){
 donutCountEl.innerText = donutMaker._autoclicker;
 if (donutMaker._donutCount >= donutMaker._autoclickCost) {
+    donutCountEl
 setInterval(() => {
     donutMaker.tickDonut();
     donutCountEl.innerText = donutMaker._donutCount;
 },1000);
+} else {
+    alert ("You Cannot Buy This Yet!!!");
 }
 })
 

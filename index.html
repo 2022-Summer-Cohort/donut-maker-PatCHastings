@@ -3,15 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="./style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
     <title>Donut Clicker</title>
   </head>
+
+  <header>
+    <nav>
+        <button type="button" class="collapsibleNavBar">About</button>
+            <div class="content">
+                <p>.</p>
+            </div>
+        <button type="button" class="collapsibleNavBar">Skills Involved</button>
+            <div class="content">
+                <p>Here is a link to my Resume <a href="" target="_blank">Resume</a>.</p>
+            </div>
+        <button type="button" class="collapsibleNavBar">Contact</button>
+            <div class="content">
+                <p>Patrick Hastings: Software Developer
+                    <ul>
+                        <li><a href="https://github.com/PatCHastings" target="_blank">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/patchastings" target="_blank">LinkedIn</a>
+                        </li>
+                    </ul>
+                </p>
+            </div>
+    </nav>
+    <h1>Donut Maker</h1>
+    <h3>Make as many donuts as you can!</h3>
+</header>
+
   <body>
    
-      <div class="container">DoNuTz fOrEvEr</div>
-
+    
       <h1 id="donutCount">0</h1>
       <button id ="tickDonut">click!</button>
+      <object data="/donut-svgrepo-com (1).svg" width="300" height="300" class="tickDonut" type=""></object>
       <br>
       <h1 id="autoclicker">0</h1>
       <button id ="buyAutoClicker">buy autoclicker!</button>
@@ -19,9 +46,8 @@
       <h1 id="donutCount">0</h1>
       <button id ="donutMultiply">buy a multiplier!</button>
 
-
-    
     <script src="./app.js" type="module"></script>
+
 
   </body>
 </html>

@@ -2,15 +2,49 @@
     font-family: fantasy;
     font-style: italic;
 }
+nav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+    }
+    .collapsibleNavBar {
+        background-color: #777;
+        color: white;
+        cursor: pointer;
+        padding: 10px;
+        width: 20%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 13px;
+        position: relative;
+    }
+      
+      .active, .collapsibleNavBar:hover {
+        background-color: #555;
+    }
 
 body{
-    background-color: aqua;
+    background-image: url("baker-kitchen.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: rgb(52, 247, 247);
     color-scheme: aqua;
 }
 
 button{
-    color: blueviolet;
+    color: rgb(255, 42, 131);
 }
+
+/* all fonts */
 h1{
-    color-scheme: orange;
+    color: azure;
+}
+h3{
+    color: azure;
+}
+p{
+    color: rgb(255, 0, 234);
 }
