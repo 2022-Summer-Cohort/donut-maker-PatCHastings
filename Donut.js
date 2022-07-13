@@ -3,8 +3,8 @@ class Donut{
         this._donutCount = donutCount;
         this._autoclicker = autoclicker;
         this._donutMultiply = donutMultiply;
-        this._autoclickCost = 10;
-        this._multiplyCost = 10;
+        this._autoclickCost = 20;
+        this._multiplyCost = 40;
         }
 
     get donutCount() {
@@ -21,15 +21,15 @@ class Donut{
         this._donutCount++;
     }
     buyAutoClicker() {
-        if(this._donutCount>10) {
+        if(this._donutCount>20) {
         this._autoclicker++;
-        this._donutCount-=10;
+        this._donutCount-=20;
         }
     }
     buyMultiply() {
-        if(this._donutCount>20) {
+        if(this._donutCount>40) {
         this._donutMultiply++;
-        this._donutCount-=10;
+        this._donutCount-=40;
         }
     }
     autoClickPurchase() {

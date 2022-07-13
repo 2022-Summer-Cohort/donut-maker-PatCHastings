@@ -1,0 +1,16 @@
+*{
+    font-family: fantasy;
+    font-style: italic;
+}
+
+body{
+    background-color: aqua;
+    color-scheme: aqua;
+}
+
+button{
+    color: blueviolet;
+}
+h1{
+    color-scheme: orange;
+}
