@@ -7,23 +7,31 @@ nav{
     flex-direction: row;
     width: 100%;
     position: relative;
-    }
-    .collapsibleNavBar {
-        background-color: #777;
-        color: white;
-        cursor: pointer;
-        padding: 10px;
-        width: 20%;
-        border: none;
-        text-align: left;
-        outline: none;
-        font-size: 13px;
-        position: relative;
-    }
+}
+.collapsibleNavBar {
+    background-color: rgb(234, 0, 255);
+    color: azure;
+    cursor: pointer;
+    padding: 1px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    position: sticky;
+}
       
-      .active, .collapsibleNavBar:hover {
-        background-color: #555;
-    }
+.active, .collapsibleNavBar:hover {
+    background-color: rgb(153, 58, 58);
+}
+.donutButton{
+    display: flex;
+    width: 20%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top:-10px;
+}
 
 body{
     background-image: url("baker-kitchen.jpg");
@@ -41,9 +49,11 @@ button{
 /* all fonts */
 h1{
     color: azure;
+    text-shadow: 2px 0 0 #000, 0 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000;
 }
 h3{
     color: azure;
+    text-shadow: 2px 0 0 #000, 0 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000;
 }
 p{
     color: rgb(255, 0, 234);
