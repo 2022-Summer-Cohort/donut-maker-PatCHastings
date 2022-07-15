@@ -8,23 +8,19 @@ nav{
     width: 100%;
     position: relative;
 }
-   
-/* .donutButton{
-    display: flex;
-    width: 20%;
-    height: auto;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    margin-top:-10px;
-} */
-
+.tickDonut:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.tickDonut:active{
+    transform: scale(1.05);
+}
 body{
     background-image: url("baker-kitchen.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-color: rgb(95, 190, 190);
+    background-color: rgb(74, 148, 148);
     color-scheme: aqua;
 }
 img{
@@ -33,7 +29,7 @@ img{
 }
 
 button{
-    color: rgb(255, 0, 149);
+    color: rgb(253, 57, 253);
     
     
 }
@@ -48,7 +44,7 @@ h3{
     text-shadow: 2px 0 0 #000, 0 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000;
 }
 p{
-    color: rgb(255, 0, 149);
+    color: rgb(255, 20, 255);
     text-shadow: 1px 0 0 #000, 0 1px 0 #000, 0 1px 0 #000, 1px 0 0 #000;
 }
 
@@ -66,7 +62,7 @@ ul li {
 ul li a {
     display: block;
     padding: 8px 25px;
-    color: rgb(255, 0, 149);
+    color: rgb(253, 57, 253);
     text-shadow: 1px 0 0 #000, 0 1px 0 #000, 0 1px 0 #000, 1px 0 0 #000;
     text-decoration: none;
 }
