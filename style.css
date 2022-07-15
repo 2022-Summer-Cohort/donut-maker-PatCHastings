@@ -7,6 +7,7 @@ nav{
     flex-direction: row;
     width: 100%;
     position: relative;
+    align-items: center;
 }
 .tickDonut:hover{
     transform: scale(1.1);
@@ -15,22 +16,37 @@ nav{
 .tickDonut:active{
     transform: scale(1.05);
 }
+header{
+    display: flex;
+flex-direction: row;
+position: relative;
+
+
+}
 body{
     background-image: url("baker-kitchen.jpg");
     background-position: center;
+    background-size: cover;
+    justify-content: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-color: rgb(74, 148, 148);
-    color-scheme: aqua;
+    
 }
 img{
+    display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
+    margin: auto;
 }
 
 button{
     color: rgb(253, 57, 253);
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
     
 }
 
@@ -38,10 +54,18 @@ button{
 h1{
     color: rgb(255, 175, 4);
     text-shadow: 2px 0 0 #000, 0 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 }
 h3{
     color: rgb(253, 57, 253);
     text-shadow: 2px 0 0 #000, 0 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 }
 p{
     color: rgb(255, 20, 255);
