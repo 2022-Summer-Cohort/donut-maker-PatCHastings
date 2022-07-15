@@ -7,7 +7,7 @@ nav{
     flex-direction: row;
     width: 100%;
     position: relative;
-    align-items: center;
+
 }
 .tickDonut:hover{
     transform: scale(1.1);
@@ -18,8 +18,11 @@ nav{
 }
 header{
     display: flex;
-flex-direction: row;
-position: relative;
+    flex-direction: row;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 
 
 }
