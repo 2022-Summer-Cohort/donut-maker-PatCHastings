@@ -10,25 +10,36 @@
 
   <header>
     
-        <button type="button" class="collapsibleNavBar">About</button>
-            <div class="content">
-                <p>Fred the Baker Baking Company: Making magic donuts</p>
-            </div>
-        <button type="button" class="collapsibleNavBar">Inspiration</button>
-            <div class="content">
-              <p>My game was inspired by: <a href="https://orteil.dashnet.org/cookieclicker/" target="_blank">Cookie Clicker</a> I am not liable for copyright infringement</p>
-            </div>
-        <button type="button" class="collapsibleNavBar">Contact</button>
-            <div class="content">
-                <p>Patrick Hastings: Software Developer
-                    <ul>
-                        <li><a href="https://github.com/PatCHastings" target="_blank">GitHub</a></li>
-                        <li><a href="https://www.linkedin.com/in/patchastings" target="_blank">LinkedIn</a>
-                        </li>
-                    </ul>
-                </p>
-            </div>
-    
+    <body>
+      <ul>
+          <li>
+              <a href="#">About Fred the Baker</a>
+              <ul class="dropdown">
+                  <li><p>Fred the Baker discovered an anomaly in the fabric of space-time when he accidentally dumped donut batter on the particle collider he had built underneath his donut shop. Now.. he has inadvertently created a wormhole through his donut maker, allowing an infinite amount of donuts to be produced. However, these donuts from another dimension have their own laws of physics. It is up to you to help him save the planet..</p> </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#">Inspiration</a>
+            <ul class="dropdown">
+                <li><p>My game was inspired by: <a href="https://orteil.dashnet.org/cookieclicker/" target="_blank">Cookie Clicker</a> By playing this game you waive all rights to claim remedies for violating trademarks, therefore I am not liable for copyright infringement</p> </li>
+            </ul>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+          <ul class="dropdown">
+            <p>Patrick Hastings: Software Developer
+              <ul>
+                  <li><a href="https://github.com/PatCHastings" target="_blank">GitHub</a></li>
+                  <li><a href="https://www.linkedin.com/in/patchastings" target="_blank">LinkedIn</a>
+                  </li>
+              </ul>
+          </p>
+          </ul>
+      </li>
+          
+      </ul>
+  </body>
+
     <h1>Donut Maker</h1>
     <h3>Make as many donuts as you can!</h3>
 </header>
@@ -37,6 +48,7 @@
     
       <h1 id="donutCount">0</h1>
       <img src="chocoDonutTrans.png" width="300" height="300" class="tickDonut" id ="tickDonut">
+
       <h1 id="autoclicker">0</h1>
       <button id ="buyAutoClicker">buy autoclicker!</button>
       <br>
