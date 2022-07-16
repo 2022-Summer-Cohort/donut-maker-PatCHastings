@@ -24,7 +24,7 @@ class Donut{
         this._autoclicker+=1;
     }
     tickDonutMultiply() {
-        this._donutMultiply+=1;
+        this._donutCount*=1.1;
     }
 
     buyAutoClicker() {
@@ -36,8 +36,8 @@ class Donut{
     }
     buyMultiply() {
         if(this._donutCount >= this._multiplyCost) {
-        this._donutMultiply++;
-        this._donutCount-=40;
+        this._donutMultiply += 1;
+        this._donutCount -= this._multiplyCost;
         }
     }
     autoClickPurchase() {

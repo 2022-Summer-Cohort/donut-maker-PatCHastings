@@ -29,16 +29,16 @@ setInterval(() => {
 }
 })
 
-// let multiplierButton = document.querySelector("#donutMultiply");
-// multiplierButton.addEventListener("click", function() {
-// donutCountEl.innerText = donutMaker._donutMultipy;
-// if (donutMaker._donutCount >= donutMaker._buyMultiply) {
-//     donutCountEl
-//     donutMaker.tickDonutMultiply();
-// setInterval() {
+let multiplierButton = document.querySelector("#buyMultiply");
+multiplierButton.addEventListener("click", () => {
+donutCountEl.innerText = donutMaker._donutMultipy;
+if (donutMaker._donutCount >= donutMaker._multiplyCost) {
+    donutMultiplyEl
+    donutMaker.tickDonutMultiply();
+    donutCountEl.innerText = donutMaker._donutCount;
+    donutMultiplyEl.innerText = donutMaker._donutMultiply;
 
-    
-// } else {
-//     alert ("You Cannot Buy This Yet!!!");
-// }
-// })
+} else {
+    alert ("You Cannot Buy This Yet!!!");
+}
+})
