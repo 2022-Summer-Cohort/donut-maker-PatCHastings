@@ -1,28 +1,34 @@
 import Donut from "./Donut.js";
 
-let donutMaker = new Donut(0,0,0);
+let donutMaker = new Donut(0,0,0,10,10);
 const donutCountEl = document.querySelector("#donutCount");
 const autoclickerEl = document.querySelector("#autoclicker");
 const donutMultiplyEl = document.querySelector("#donutMultiply");
+const autoclickCostEl = document.querySelector("#autoclickCost");
+const donutMultiplyCostEl = document.querySelector("multiplyCost");
+const clickPowerEl = document.querySelector("#clickPower");
 
 let button = document.querySelector("#tickDonut");
-let autoClickerTotalSpan = document.querySelector("#autoClickerTotal");
-
 button.addEventListener("click", function(){
     donutMaker.tickDonut();
     donutCountEl.innerText = donutMaker._donutCount;
+    // if(donutMaker._clickPower >= 2) {
+    //     // donutMaker.tickDonutMultiply();
+    // }
 })
 
 let autoclickerButton = document.querySelector("#autoClickPurchase");
-autoclickerButton.addEventListener("click", function(){
+autoclickerButton.addEventListener("click", function() {
 donutCountEl.innerText = donutMaker._autoclicker;
 if (donutMaker._donutCount >= donutMaker._autoclickCost) {
-    donutCountEl
+    donutMaker._donutCount -= donutMaker._autoclickCost;
     donutMaker.tickAutoClicker();
 setInterval(() => {
+    // this iterates tickpower into autoclicker, needs fixed
     donutMaker.tickDonut();
     donutCountEl.innerText = donutMaker._donutCount;
     autoclickerEl.innerText = donutMaker._autoclicker;
+    autoclickCostEl.innerText = donutMaker._autoclickCost;
 },1000);
 } else {
     alert ("You Cannot Buy This Yet!!!");
@@ -30,13 +36,17 @@ setInterval(() => {
 })
 
 let multiplierButton = document.querySelector("#buyMultiply");
-multiplierButton.addEventListener("click", () => {
-donutCountEl.innerText = donutMaker._donutMultipy;
+multiplierButton.addEventListener("click", function() {
+donutCountEl.innerText = donutMaker._donutMultiply;
+donutMultiplyEl.innerText = donutMaker._donutMultiply;
 if (donutMaker._donutCount >= donutMaker._multiplyCost) {
-    donutMultiplyEl
+    donutMaker._donutCount -= donutMaker._multiplyCost;
+    donutMaker._clickPower ++; 
     donutMaker.tickDonutMultiply();
+    // donutMaker.tickDonut();
     donutCountEl.innerText = donutMaker._donutCount;
     donutMultiplyEl.innerText = donutMaker._donutMultiply;
+    donutMultiplyCostEl.innerText = donutMaker._multiplyCost;
 
 } else {
     alert ("You Cannot Buy This Yet!!!");
