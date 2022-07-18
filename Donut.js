@@ -30,35 +30,33 @@ class Donut{
 
 
     tickDonut() {
-        this._donutCount += this._clickPower;
+        this._donutCount ++;
     }
     tickAutoClicker() {
-        this._donutCount += 1;
-        this._autoclicker+=1;
+        this._autoclicker += 1;
     }
-    tickDonutMultiply() {
-        this._donutCount += 1;
+    tickDonutMultiply() { 
         this._donutMultiply += 1;
-        this._donutCount = Math.round(this._donutCount * 1.1);
-    }
-    
-    buyMultiply() {
-        if(this._donutCount >= this._multiplyCost) {
-        this._multiplyCost = this.multiplyCost * 1.3;
+        this.clickPower ++;
+        this._donutCount = Math.round(this._donutCount * 1.5);
         
-        this._donutMultiply += 1;
-        // this._clickPower *= 1.2;
-        this._donutCount -= this._multiplyCost;
-        }
-    }
+    } 
+
     autoClickPurchase() {
         if(this._donutCount >= this._autoclickCost) {
-        this._autoclickCost *= 1.1;
+        this._autoclickCost *= 2;
         this._donutCount -= this._autoclickCost;
         this._autoclicker ++;
         
         }
-
+    }
+    
+    buyMultiply() {
+        if(this._donutCount >= this._multiplyCost) {
+        this._donutMultiply += 1;
+        this._donutCount -= this._multiplyCost;
+        this._multiplyCost *= 1.3;
+        }
     }
 }
 

@@ -10,11 +10,11 @@ nav{
 
 }
 .tickDonut:hover{
-    transform: scale(1.1);
+    transform: scale(1.15);
     cursor: pointer;
 }
 .tickDonut:active{
-    transform: scale(1.05);
+    transform: scale(1);
 }
 header{
     display: flex;
@@ -44,7 +44,8 @@ img{
 }
 
 button{
-    color: rgb(253, 57, 253);
+    color: rgb(255, 175, 4);
+    background: #5f5a5a;
     display: flex;
     justify-content: center;
     align-items: center;
