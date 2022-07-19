@@ -37,9 +37,8 @@ class Donut{
     }
     tickDonutMultiply() { 
         this._donutMultiply += 1;
-        this.clickPower ++;
-        this._donutCount = Math.round(this._donutCount * 1.5);
-        
+        this._clickPower += 1;
+        this._donutCount = Math.round(this._donutCount + this._clickPower);  
     } 
 
     autoClickPurchase() {
@@ -51,13 +50,13 @@ class Donut{
         }
     }
     
-    buyMultiply() {
-        if(this._donutCount >= this._multiplyCost) {
-        this._donutMultiply += 1;
-        this._donutCount -= this._multiplyCost;
-        this._multiplyCost *= 1.3;
-        }
-    }
+    // buyMultiply() {
+    //     if(this._donutCount >= this._multiplyCost) {
+    //     this._donutMultiply += 1;
+    //     this._donutCount -= this._multiplyCost;
+    //     this._multiplyCost *= 1.3;
+    //     }
+    // }
 }
 
 export default Donut;
