@@ -4,10 +4,67 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
     <title>Donut Clicker</title>
   </head>
+
+  <header>
+
+    <body>
+      <ul>
+          <li>
+              <a href="#">About Fred the Baker</a>
+              <ul class="dropdown">
+                  <li><p>Fred the Baker discovered an anomaly in the fabric of space-time when he accidentally dumped donut batter on the particle collider he had built underneath his donut shop. Now.. he has inadvertently created a wormhole through his donut maker, allowing an infinite amount of donuts to be produced. However, these donuts from another dimension have their own laws of physics. It is up to you to help him save the planet..</p> </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#">Inspiration</a>
+            <ul class="dropdown">
+                <li><p>My game was inspired by: <a href="https://orteil.dashnet.org/cookieclicker/" target="_blank">Cookie Clicker</a> By playing this game you waive all rights to claim remedies for violating trademarks, therefore I am not liable for copyright infringement</p> </li>
+            </ul>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+          <ul class="dropdown">
+            <p>Patrick Hastings: Software Developer
+              <ul>
+                  <li><a href="https://github.com/PatCHastings" target="_blank">GitHub</a></li>
+                  <li><a href="https://www.linkedin.com/in/patchastings" target="_blank">LinkedIn</a>
+                  </li>
+              </ul>
+          </p>
+          </ul>
+      </li>
+      </ul>
+  </body>
+
+
+</header>
+
   <body>
-    <div class="container"></div>
-    <script src="./index.js"></script>
+    <br>
+    <br>
+    
+    <h1>Donut Maker</h1>
+    <br>
+    <h3>Make as many donuts as you can!</h3>
+      <h1 id="donutCount">0</h1>
+      <br>
+      <img src="chocoDonutTrans.png" width="250" height="250" class="tickDonut" id ="tickDonut">
+      <br>
+      <h1 id="autoclicker">0</h1>
+      <p>Donuts needed:&nbsp<span id="autoclickCost">10</span></p>
+      <button id ="autoClickPurchase">buy autoclicker!</button>
+      <br>
+      <h1 id="donutMultiply">0</h1>
+      <p>Donuts needed:&nbsp<span id="multiplyCost">10</span></p>
+      <button id ="buyMultiply">buy a multiplier!</button>
+      <br>
+      <button id="reset">Reset</button>
+      
+
+    <script src="./app.js" type="module"></script>
+
   </body>
 </html>
